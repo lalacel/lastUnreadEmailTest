@@ -43,7 +43,8 @@ public class testNG {
 
     // Execute the JavaScript code
     jsExecutor.executeScript("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})");
-	System.out.println("driver created");
+    
+    
 	driver.get("https://mail.google.com/mail/");
 
 	InputMailPage mailPage = new InputMailPage(driver);
